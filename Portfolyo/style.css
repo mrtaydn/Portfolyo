@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kenia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Corinthia:wght@700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(img/arkaplan.webp);
+}
+.arkaplan{
+    background-color: rgba(0, 0, 0, 0.486);
+}
+.user{
+    width: fit-content;
+    margin: 100px auto;
+    display: flex;
+}
+.user img{
+    width: 250px;
+    cursor: pointer;
+    border-radius: 10px;
+    position: relative;
+    z-index: 100;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.3);
+    transition: transform 1s;
+    margin-left:20%
+}
+.info{
+    padding: 10px 50px;
+    transform: translateX(0px);
+    opacity: 1;
+    transition: transform 1s, opacity 1s;
+}
+.info p{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif
+}
+.info h1{
+    font-size: 80px;
+    font-weight: 500;
+    font-family: 'Nerko One', cursive;
+    color: blueviolet;
+}
+.close-icon{
+    width: 320px;
+    cursor: pointer;
+    position: relative;
+    transition: transform 1s;
+    margin-right: 25%;
+}
+.close-icon::before, .close-icon::after{
+    content: '';
+    height: 100%;
+    width: 2px;
+    background: rgba(51, 51, 51, 0.363);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -1px;
+}
+.close-icon::before{
+    transform: rotate(30deg);
+}
+.close-icon::after{
+    transform: rotate(-30deg);
+}
+.hide-details .info{
+    transform: translateX(50px);
+    opacity: 0;
+}
+.hide-details .close-icon{
+    transform: translateX(-410px);
+}
+.hide-details img{
+    transform: translateX(410px);
+    box-shadow: 0 0 0 rgba(0,0,0,0.3);
+}
+/* Navbar */
+.navbar-brand{
+    margin: 0 25px;
+    padding: 5px;
+    font-family: 'Crimson Text', serif;
+    color: white;
+}
+.navbar-nav{
+    margin-left: 80%;
+}
+.icons{
+    color: white;
+    margin: 0 10px;
+}
+.icons:hover{
+    cursor: pointer;
+    color: grey;
+}
+/* Projeler */
+.baslik{
+    text-align: center;
+    color: white;
+    font-family: 'Kenia', cursive;
+}
+/* Yetenekler */
+.yetenek{
+    text-align: center;
+    color: white;
+    font-family: 'Permanent Marker', cursive;
+}
+.bslk{
+    color: white;
+}
+/* footer */
+.menu{
+    text-align: center;
+    margin: 10px;
+}
+.iletisim{
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+}
+.logo{
+    color: white;
+    margin: 20px 10px;
+}
+.logo:hover{
+    cursor: pointer;
+    color: grey;
+}
+.iletisim a{
+    text-decoration: none;
+}
+.aksan{
+    background-color: black;
+    margin:50px 0;
+}
